@@ -1,0 +1,28 @@
+#register {
+  background-color: var(--green);
+}
+#login {
+  background-color: var(--grayDarker);
+  outline-style: solid;
+  outline-color: var(--gray);
+  outline-width: 1px;
+  margin-left: 3%;
+}
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 400;
+  color: var(--white);
+  border-radius: 40px;
+  width: 150px;
+  height: 25px;
+  text-align: center;
+}
+
+.linkActive {
+  composes: link;
+  /* color: var(--white); */
+  border-radius: 40px;
+}
+

@@ -1,0 +1,93 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* border-color: white; */
+  /* outline-color: antiquewhite; */
+  /* margin-right: 2.5%; */
+  /* background-color: var(--green); */
+}
+
+.username {
+  font-weight: 700;
+}
+
+.userBarBtn {
+  background-color: var(--grayDark);
+  width: 220px;
+  /* align-items: center; */
+  /* align-content: center; */
+  /* justify-content: center; */
+}
+
+.userBarItems {
+  position: relative;
+  display: inline-block;
+}
+
+.userPanel {
+  background-color: transparent;
+  color: var(--gray);
+  /* outline-color: aqua; */
+  /* border-radius: 15px; */
+  padding-left: 20px;
+  height: 30px;
+  width: 220px;
+  text-align: left;
+  /* vertical-align: middle; */
+  /* outline: none !important; */
+  /* border: 0; */
+  /* height: 50px; */
+  /* padding: 0px 20px 0px 20px; */
+  /* padding-right: 5px; */
+  /* padding-left: 5px; */
+}
+
+.userPanelAvatar {
+  height: 28px;
+  padding: 0px;
+  background-color: var(--grayLight);
+  color: var(--white);
+  text-align: center;
+  margin: 5px;
+  /* padding-bottom: 20px; */
+}
+.toGreen {
+  composes: userBarItems;
+  filter: invert(30%) sepia(30%) saturate(7390%) hue-rotate(96deg) brightness(170%) contrast(70%);
+}
+
+.toGray {
+  composes: userBarItems;
+  filter: invert(43%) sepia(0%) saturate(2772%) hue-rotate(260deg) brightness(97%) contrast(90%);
+}
+
+li button:hover{
+  color: var(--green);
+}
+
+.modalSettings {
+  z-index: 3;
+  position: absolute;
+  display: inline-block;
+  height: 55%;
+  width: 35%;
+  top: 25%;
+  left: 32.5%;
+  background-color: var(--grayDark);
+  border: .5px solid var(--gray); 
+  border-radius: 30px;
+}
+
+.modalLogout {
+  z-index: 3;
+  position: absolute;
+  display: inline-block;
+  height: 30%;
+  width: 35%;
+  top: 40%;
+  left: 32.5%;
+  background-color: var(--grayDark);
+  border: .5px solid var(--gray); 
+  border-radius: 30px;
+}

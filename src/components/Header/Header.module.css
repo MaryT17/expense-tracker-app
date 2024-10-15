@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    /* align-items: center; */
+    vertical-align: middle;
+    margin: 0% 0% 16px 0%;
+    /* margin: 2.5px, 16px, 0px, 2.5%; */
+    /* padding-left: 2.5%; */
+    /* padding-bottom: 1%; */
+    /* padding: 1%, 2.5%, 1%, 2.5%; */
+    /* padding: 0%, 0%, 1%, 0%; */
+    /* padding-left: 2.5%; */
+    /* padding: 0% 2.5% 4.25% 2.5%; */
+    /* padding-left: 2.5%; */
+    /* height: 30%; */
+    border-bottom: 1px solid var(--gray);
+    /* justify-content: center; */
+    /* align-items: center; */
+    align-items: center;
+    z-index: 1;
+  }
+  /* .header {
+    position: absolute;
+    top: 3%;
+    width: 95%;
+    margin: auto;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: var(--gray);
+  } */
+
+  /* .logo {
+    top: 3%;
+    width: 95%;
+    position: absolute;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  } */
+  .balanceLabel {
+    padding-left: 10px;
+    color: var(--gray);
+  }
+  .balanceAmount {
+    padding-top: 7px;
+    color: var(--grayDarker);
+    font-size: 25px;
+    /* font: 18px Arial, sans-serif bold; */
+    font-weight: bold;
+  }
+  .raise {
+    background-color: var(--greenLight);
+    color: var(--green);
+    border-radius: 13px;
+    width: 80px;
+    /* align-items: center; */
+    align-content: center;
+    text-align: center;
+    height: 25px;
+    margin-left: 15px;
+    margin-top: 25px;
+    /* display: inline; */
+    font-weight: 600;
+  }

@@ -1,0 +1,282 @@
+.whole {
+  height: 90%;
+  width: 95%;
+  left: 2.5%;
+  right: 2.5%;
+  position: absolute;
+  /* background-color: var(--white); */
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: -1;
+}
+
+.modalWhole {
+  composes: whole;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  background-color: var(--overlay);
+  z-index: 2;
+}
+  
+.half {
+  height: 90%;
+  width: 46%;
+  position: absolute;
+  /* background-color: var(--white); */
+  /* border: .5px solid var(--green);  */
+  border-radius: 30px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: -1;
+}
+  
+.left {
+  composes: half;
+  left: 2.5%;
+  z-index: -1;
+  /* background-color: var(--green); */
+  /* border: .5px solid var(--green); */
+}
+
+.right {
+  composes: half;
+  right: 2.5%;
+  z-index: -1;
+  /* background-color: var(--greenLight); */
+  /* border: .5px solid var(--green); */
+}
+
+.quarter {
+  height: 46.5%;
+  position: inline-block;
+  border-radius: 30px;
+  background-color: var(--grayDark);
+  /* border: .5px solid var(--green); */
+}
+.upper {
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+.lower {
+  margin-bottom: 3%;
+  margin-top: 2%;
+}
+.qL{
+  margin-left: 2.5%;
+}
+.qR {
+  margin-right: 2.5%;
+}
+.qUL {
+  composes: quarter;
+  composes: upper;
+  composes: qL;
+  /* background-color: var(--gray); */
+}
+
+.qLL {
+  composes: quarter;
+  composes: lower;
+  composes: qL;
+  /* background-color: var(--violet); */
+}
+
+.qUR {
+  composes: quarter;
+  composes: upper;
+  composes: qR;
+  /* background-color: var(--violet); */
+  /* border: .5px solid var(--green); */
+}
+
+.qLR {
+  composes: quarter;
+  composes: lower;
+  composes: qR;
+  /* background-color: var(--violet); */
+  /* border: .5px solid var(--green); */
+}
+
+.halfUQ {
+  composes: quarter;
+  height: 25%;
+  background-color: var(--greenLight);
+  
+}
+
+.halfLQ {
+  composes: quarter;
+  height: 25%;
+  background-color: var(--white);
+  
+}
+
+.q75 {
+  height: 58.5%;
+  width: 90%;
+  /* top: 25%; */
+  top: 35%;
+  left: 5%;
+  right: 5%;
+  position: absolute;
+  background-color: var(--grayDark);
+  border-radius: 30px;
+}
+.decorationTab {
+  height: 22.5%;
+  left: 2.5%;
+  width: 47%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5%;
+  /* background-color: var(--violet); */
+  /* border: .5px solid var(--green); */
+}
+
+.decor {
+  height: 22.5%;
+  left: 2.5%;
+  width: 47%;
+  /* position: absolute; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  gap: 2.5%;
+  width: 47.5%;
+  /* border: .5px solid var(--green); */
+}
+
+.decorationTabSolo {
+  width: 100%;
+  /* width: 85%; */
+  height: 70%;
+  /* height: 55%; */
+  border-radius: 30px;
+  background-color: var(--grayDark);
+  /* align-content: center; */
+    /* border: .5px solid var(--green); */
+  display: inline-flex;
+}
+
+.decorationTabLeft {
+  margin-right: .5%;
+  top: 30%;
+  width: 47%;
+  height: 55%;
+  display: flex;
+  border-radius: 30px;
+  /* background-color: var(--white); */
+  /* border: .5px solid var(--green); */
+}
+
+.decorationTabRight {
+  margin-left: .5%;
+  top: 30%;
+  width: 47%;
+  height: 55%;
+  display: flex;
+  border-radius: 30px;
+  /* background-color: var(--greenLight); */
+  /* border: .5px solid var(--green); */
+}
+
+.decorAlign {
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  padding-left: 10%;
+}
+
+.caption {
+  padding-top: 30px;
+  color: var(--gray);
+  font-size: medium;
+}
+.banner {
+  /* composes: expenseBlock; */
+  font-size: 70px;
+  color: var(--white);
+  /* display: flex; */
+  /* width: 50%; */
+  display: inline;
+}
+
+.bannerS {
+  font-size: 50px;
+  color: var(--white);
+  display: inline;
+}
+
+.underline {
+  composes: banner;
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.balanceLabel {
+  /* padding-top: px; */
+  color: var(--gray);
+  padding-left: 10%;
+}
+.balanceAmount {
+  padding-top: 7px;
+  color: var(--grayDarker);
+  font-size: 25px;
+  /* font: 18px Arial, sans-serif bold; */
+  font-weight: bold;
+}
+.raise {
+  background-color: var(--greenLight);
+  color: var(--green);
+  border-radius: 13px;
+  width: 100px;
+  /* align-items: center; */
+  align-content: center;
+  text-align: center;
+  height: 25px;
+  margin-left: 25px;
+  margin-top: 25px;
+  /* display: inline; */
+  font-weight: 600;
+}
+
+.currencyinput {
+  border: 1px inset #ccc;
+}
+.currencyinput input {
+  border: 0;
+}
+
+.search {
+  border-radius: 30px;
+}
+
+.searchIcon {
+  composes: search;
+  border-radius: 30px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  color: var(--green);
+}
+
+.inputWrapper {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}

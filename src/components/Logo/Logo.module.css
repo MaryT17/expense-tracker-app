@@ -1,0 +1,14 @@
+.nav {
+    position: absolute;
+    display: flex;
+    top: 1.75%;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 23px;
+    color: var(--white);
+    text-decoration: none;
+}
+.nav:hover {
+    color: var(--green);
+}

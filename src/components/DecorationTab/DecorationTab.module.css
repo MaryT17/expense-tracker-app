@@ -1,0 +1,45 @@
+.bg{
+    width: 300px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: var(--white);
+    /* float: left; */
+    /* margin-bottom: 15px; */
+    /* margin-left: 150px; */
+    
+    position: absolute;
+    display: inline-flex;
+    left: 2.5%;
+    top: 60%;
+    align-items: center;
+    align-content: center;
+    /* width: 40%; */
+}
+.balanceState {
+    margin: 20px;
+}
+.balanceLabel {
+    /* padding-top: px; */
+    color: var(--gray);
+}
+.balanceAmount {
+    padding-top: 7px;
+    color: var(--grayDarker);
+    font-size: 25px;
+    /* font: 18px Arial, sans-serif bold; */
+    font-weight: bold;
+}
+.raise {
+    background-color: var(--greenLight);
+    color: var(--green);
+    border-radius: 13px;
+    width: 80px;
+    /* align-items: center; */
+    align-content: center;
+    text-align: center;
+    height: 25px;
+    margin-left: 15px;
+    margin-top: 25px;
+    /* display: inline; */
+    font-weight: 600;
+}

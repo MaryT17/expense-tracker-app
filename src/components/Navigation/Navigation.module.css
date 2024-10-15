@@ -1,0 +1,49 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  /* padding: 12px; */
+  padding: 8px 18px 8px 18px;
+  /* font-weight: 700; */
+  color: var(--white);
+  border-radius: 30px;
+  outline-style: solid;
+  outline-color: var(--gray);
+  outline-width: 1px;
+}
+
+.linkActive {
+  composes: link;
+  /* font-weight: 800; */
+  color: var(--grayDarker);
+  background-color: var(--green);
+  outline-color: var(--green);
+}
+
+.nav {
+  position: absolute;
+  top: 1.75%;
+  left: 43%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 240px;
+  /* padding-left: 50px; */
+  
+  /* padding-left: 2.5%; */
+  /* padding-right: 2.5%; */
+  /* font-weight: 700; */
+  /* color: var(--white); */
+  /* font: 18px Arial, sans-serif bold; */
+  /* margin: auto; */
+  /* vertical-align: top; */
+  /* align-items: center; */
+}
+
+/* #navExpense, #navIncome {
+  background-color: var(--grayDarker);
+  outline-style: solid;
+  outline-color: var(--gray);
+  outline-width: 1px;
+  margin-left: 3%;
+  border-radius: 30px;
+} */

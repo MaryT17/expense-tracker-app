@@ -1,0 +1,150 @@
+.container {
+  min-height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+}
+.imageWrapper {
+position: absolute;
+object-fit:scale-down;
+}
+
+.welcomeTab {
+  min-height: calc(100vh - 150px);
+  display: block;
+  align-items:flex-start;
+  justify-content: center;
+  width: 50%;
+  border-radius: 20px;
+  /* background-color: var(--white); */
+  position: absolute;
+  right: 2.5%;
+  /* top: 10%; */
+}
+.expenseBlock {
+  /* composes: welcomeTab; */
+  /* position: absolute; */
+  /* right: 7.5%; */
+  width: 90%;
+  /* top: 50%; */
+  /* bottom: 45%; */
+  /* background-color: var(--green); */
+}
+
+.allUsersTab {
+  position: absolute;
+  bottom: 20%;
+  width: 30%;
+  right: 43%;
+}
+.count {
+  font-size: 25px;
+  color: var(--white);
+}
+.countCaption {
+  padding-top: 10px;
+  color: var(--gray);
+  font-size: medium;
+}
+.pfp{
+  composes: allUsersTab;
+  /* position: relative; */
+  right: 73%;
+  /* bottom: 15%; */
+  width: 60px;
+  bottom: 28%;
+}
+.userPfp {
+  display:inline ;
+  width: 80px;
+  border-radius: 90%;
+  border: 3px solid var(--violet);
+  /* left: -10px; */
+  position: absolute;
+  background-color: var(--white);
+}
+#p1{
+  right: 130px;
+}
+#p2{
+  right: 80px;
+}
+#p3{
+  right: 30px;
+}
+/* 
+.logo {
+    position: absolute;
+    top: 3%;
+    width: 95%;
+    margin: auto;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: var(--gray);
+  }  */
+
+
+.balanceLabel {
+  /* padding-top: px; */
+  color: var(--gray);
+  padding-left: 5%;
+}
+.balanceAmount {
+  padding-top: 7px;
+  color: var(--white);
+  /* background-color: var(--grayDarker); */
+  font-size: 25px;
+  /* font: 18px Arial, sans-serif bold; */
+  font-weight: bold;
+}
+.raise {
+  background-color: var(--greenLight);
+  color: var(--green);
+  border-radius: 13px;
+  width: 80px;
+  /* align-items: center; */
+  align-content: center;
+  text-align: center;
+  height: 25px;
+  margin-left: 15px;
+  margin-top: 25px;
+  /* display: inline; */
+  font-weight: 600;
+}
+
+.radioType {
+  /* position:absolute; */
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+}
+
+.form {
+  /* display: relative;
+  align-items: center;
+  align-content: center; */
+  position: relative;
+  display: flex;
+}
+
+.radioType input[type=radio]{
+  position: absolute;
+  display: inline;
+}
+
+.label {
+  position:absolute;
+  /* display:inline; */
+  font-size:20px;
+  /* font-style: bold; */
+  font-weight: 400;
+  color: var(--white);
+}

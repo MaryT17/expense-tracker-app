@@ -1,0 +1,80 @@
+.welcomeTab {
+    min-height: calc(100vh - 150px);
+    display: block;
+    align-items:flex-start;
+    justify-content: center;
+    width: 50%;
+    border-radius: 20px;
+    /* background-color: var(--white); */
+    position: absolute;
+    right: 2.5%;
+    /* top: 10%; */
+}
+.expenseBlock {
+    /* composes: welcomeTab; */
+    /* position: absolute; */
+    /* right: 7.5%; */
+    width: 90%;
+    /* top: 50%; */
+    /* bottom: 45%; */
+    /* background-color: var(--green); */
+}
+.caption {
+    padding-top: 30px;
+    color: var(--gray);
+    font-size: medium;
+}
+.banner {
+    composes: expenseBlock;
+    font-size: 70px;
+    color: var(--white);
+    display: flex;
+    width: 50%;
+    display: inline;
+}
+.underline {
+    composes: banner;
+    color: var(--green);
+    text-decoration: underline;
+}
+.allUsersTab {
+    position: absolute;
+    bottom: 15%;
+    width: 30%;
+    right: 43%;
+}
+.count {
+    font-size: 25px;
+    color: var(--white);
+}
+.countCaption {
+    padding-top: 10px;
+    color: var(--gray);
+    font-size: medium;
+}
+.pfp{
+    composes: allUsersTab;
+    /* position: relative; */
+    right: 73%;
+    /* bottom: 15%; */
+    width: 60px;
+    bottom: 25%;
+}
+.userPfp {
+    display:inline ;
+    width: 80px;
+    border-radius: 90%;
+    border: 3px solid var(--violet);
+    /* left: -10px; */
+    position: absolute;
+    background-color: var(--white);
+}
+#p1{
+    right: 130px;
+}
+#p2{
+    right: 80px;
+}
+#p3{
+    right: 30px;
+}
